@@ -1,0 +1,40 @@
+/* .navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(71, 199, 103);
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap:20px
+}
+
+.navbar ul li a{
+    color: rgb(11, 34, 117);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.logo{
+    height: 60px;
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap:20px
+    }
+   
+    }
+   */

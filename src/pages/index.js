@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import QuestionCard from "../components/questionCard/QuestionCard";
-// import styles from "./styles.module.css"
-// import Navbar from "../components/navbar/Navbar";
+import styles from "./styles.module.css"
+import Navbar from "../components/navbar/Navbar";
 
 const MainPage = () => {
   const [questions, setQuestions] = useState([]);
@@ -21,6 +21,7 @@ const MainPage = () => {
 
   return (
     <div>
+      <Navbar />
     <div>
       {questions.map((question)=> (
       <QuestionCard 

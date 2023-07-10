@@ -13,7 +13,7 @@ const InsertQuestion = () => {
 const [question, setQuestion] = useState("")
 
 const addNewQuestion = async ()=>{
-const response = await axios.post("http://localhost:8082/questions",
+const response = await axios.post("http://localhost:8082/question",
 { Question: question }
 );
 console.log("response", response);
@@ -26,7 +26,7 @@ router.push("/");
     <div className={styles.questionForm} >
       <input value={question} onChange={(question)=>setQuestion(question.target.value)} placeholder="Question"/>
 
-      <button onClick={()=>addNewQuestion()}>Insert Question</button>
+      <button className={styles.button}onClick={()=>addNewQuestion()}>Insert Question</button>
     </div>
   </div>
   );

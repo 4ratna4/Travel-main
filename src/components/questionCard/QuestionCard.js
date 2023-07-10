@@ -6,8 +6,10 @@ import Link from "next/link";
 const Question =({questionText, id}) => {
    return (
     <>
-    <Link href={`/question/${id}/answers`}>
-   <div><h1>{questionText}</h1></div>
+    <Link className={styles.link} href={`/question/${id}/answers`}>
+   <div className={styles.questionWrapper}>
+    <h1 className={styles.question}>{questionText}</h1>
+    </div>
    </Link>
    </>
    ); 

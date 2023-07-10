@@ -22,12 +22,14 @@ const MainPage = () => {
   return (
     <div>
       <Navbar />
-    <div>
+    <div className={styles.questionWrapper}>
+      <div className={styles.question}>
       {questions.map((question)=> (
       <QuestionCard 
       id={question._id}
       questionText={question.questionText}/>
       ))}
+      </div>
     </div>
     </div>
   );
